@@ -912,7 +912,9 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
             if(fileName.endsWith(".zip") && fileName.indexOf(config.getDevice()) != -1) {
                 String[] parts = fileName.split("-");
                 if (parts.length > 1) {
-                    String version = parts[1];
+                    String version = parts[2];
+                    if(version.equals("P"))
+                        version = "9";
                     Version current = new Version(config.getAndroidVersion());
                     Version fileVersion = new Version(version);
                     if (fileVersion.compareTo(current) >= 0) {
