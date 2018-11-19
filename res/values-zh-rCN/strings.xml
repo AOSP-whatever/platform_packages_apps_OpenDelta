@@ -88,4 +88,6 @@
   <string name="clean_files_feedback" formatted="false">已删除 %d 文件。现在按“检查更新”</string>
   <string name="state_error_permissions">没有访问存储的权限。</string>
   <string name="state_error_flash">刷入失败，请清除 /cache 后再试。</string>
+
+    <string name="donation">捐赠</string>  
 </resources>

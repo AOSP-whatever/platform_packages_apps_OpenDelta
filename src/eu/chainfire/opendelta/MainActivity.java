@@ -55,6 +55,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.net.Uri;
 
 public class MainActivity extends Activity {
     private TextView title = null;
@@ -155,6 +156,17 @@ public class MainActivity extends Activity {
             textView.setTypeface(title.getTypeface());
     }
 
+    private void openDonation() {
+        try {
+            Uri uri = Uri.parse("http://donation.kenzoroms.club");
+            Intent intent = new Intent();
+            intent.setAction("android.intent.action.VIEW");
+            intent.setData(uri);
+            startActivity(intent);
+        } catch (Exception ex) {
+        }
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -168,6 +180,9 @@ public class MainActivity extends Activity {
         case R.id.action_about:
             showAbout();
             return true;
+        case R.id.donation:
+            openDonation();
+            return true;            
         default:
             return super.onOptionsItemSelected(item);
         }

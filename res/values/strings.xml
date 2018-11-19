@@ -123,4 +123,5 @@
     <string name="progress_status_8">Attempting Rollback &#8230;</string>
     <string name="progress_status_9">Disabled.</string>
 
+    <string name="donation">Donation</string>
 </resources>
