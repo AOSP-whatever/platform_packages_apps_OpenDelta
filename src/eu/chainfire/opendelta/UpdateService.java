@@ -1712,7 +1712,8 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                             writeString(os, String.format("install %s", file));
                         }
                     }
-                    writeString(os, "wipe cache");
+                    writeString(os,
+                            "cmd rm -rf /cache/recovery/*");
                 } finally {
                     os.close();
                 }
