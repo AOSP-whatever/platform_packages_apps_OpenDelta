@@ -158,7 +158,7 @@ public class MainActivity extends Activity {
 
     private void openDonation() {
         try {
-            Uri uri = Uri.parse("http://donation.kenzoroms.club");
+            Uri uri = Uri.parse("https://donation.sagit.cf");
             Intent intent = new Intent();
             intent.setAction("android.intent.action.VIEW");
             intent.setData(uri);
