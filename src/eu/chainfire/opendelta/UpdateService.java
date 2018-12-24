@@ -1714,6 +1714,10 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                     }
                     writeString(os,
                             "cmd rm -rf /cache/recovery/*");
+                    writeString(os,
+                            "cmd rm -rf /data/dalvik-cache/*");
+                    writeString(os,
+                            "cmd reboot");                                                        
                 } finally {
                     os.close();
                 }
