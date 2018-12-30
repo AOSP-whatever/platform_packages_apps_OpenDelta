@@ -23,7 +23,7 @@
 	<string name="url_base_update">https://file.sagit.cf/sagit/publish/%s/</string>
 
 	<!-- URL base to find the full zip files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-	<string name="url_base_full">https://file.sagit.cf/sagit%s/</string>
+	<string name="url_base_full">https://file.sagit.cf/sagit/%s/</string>
 
 	<!-- URL base to fetch all builds -->
 	<string name="url_base_json">https://ota.sagit.cf/json.php</string>
